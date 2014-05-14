@@ -122,11 +122,11 @@ public class Game {
 			try{
 				int option = Integer.parseInt(input);
 				
-				if(option < ScoreType.ONES.index || option >= ScoreType.NUM_SCORE_TYPES){
+				if(option < 1 || option > ScoreType.NUM_SCORE_TYPES){
 					System.out.println("Choice " + option + " is not an option.");
 				}
 				else{
-					return ScoreType.scoreTypes[option];
+					return ScoreType.scoreTypes[option - 1];
 				}
 			}
 			catch(NumberFormatException e){

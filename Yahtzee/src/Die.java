@@ -10,6 +10,10 @@ public class Die {
 	}
 	
 	public Die(int num) {
+		if(num < MIN || num > MAX){
+			throw new IllegalArgumentException("Bad die value of " + num);
+		}
+		
 		value = num;
 	}
 

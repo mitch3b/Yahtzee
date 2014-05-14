@@ -23,11 +23,12 @@ public class PlayerCard {
 		int[] scores = hand.getScores();
 		
 		for(ScoreType scoreType : ScoreType.scoreTypes){
+			//Options are index + 1 so that ones == 1, etc
 			if(used[scoreType.index]){
-				System.out.println(scoreType.index + ": " + scoreType + " Already used." );
+				System.out.println((scoreType.index + 1) + ": " + scoreType + " Already used." );
 			}
 			else{
-				System.out.println(scoreType.index + ": " + scoreType + " " + scores[scoreType.index]);
+				System.out.println((scoreType.index +1 ) + ": " + scoreType + " " + scores[scoreType.index]);
 			}
 		}
 	}
@@ -65,6 +66,8 @@ public class PlayerCard {
 					System.out.println("Bonus: Needed " + BONUS_THRESHOLD + " Got " + result + ". FAILURE");
 				}
 				
+				System.out.println("");				
+				System.out.println("Midway Score: " + result);
 				System.out.println("");
 			}
 		}
