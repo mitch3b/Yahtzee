@@ -5,4 +5,4 @@ Experiment on estimating time
 
 Will upload survey.
 
-Screen Capture here http://youtu.be/we-z_wjwO3Q
+I took a screen capture if anyone wants it, but feel weird leaving it out there  for all the world to see cos its me and my wife lounging around.
